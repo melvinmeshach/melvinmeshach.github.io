@@ -102,7 +102,7 @@ async function formSubmit (event) {
 	}
 	event.target.reset();
 	try {
-		const response = await axios.post("https://melvinmeshach.herokuapp.com//message", data);
+		const response = await axios.post("https://melvinmeshach.herokuapp.com/message", data);
 		console.log("Response:"+response);
 		$(".success").html("Message sent!").css({"visibility": "visible", "color":"green"});
 		setTimeout(()=>{

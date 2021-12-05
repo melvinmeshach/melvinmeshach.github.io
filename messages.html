@@ -24,7 +24,7 @@
         </table>
         <script>
 		async function fetchAndRenderMessage(){
-            const response = await axios.get("/message");
+            const response = await axios.get("https://melvinmeshach.herokuapp.com/message");
             for(let message of response.data)
             {
                 console.log(message)
